@@ -1,0 +1,36 @@
+R_DEF: Internal format may change without notice
+local
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
+color ic_launcher_background
+drawable alienyellowjump
+drawable alienyellowwalk1
+drawable alienyellowwalk2
+drawable cloud1
+drawable cloud2
+drawable cloud3
+drawable cloud4
+drawable cloud5
+drawable floor
+drawable layer1
+drawable layer10
+drawable layer11
+drawable layer12
+drawable layer2
+drawable layer3
+drawable layer4
+drawable layer5
+drawable layer6
+drawable layer7
+drawable layer8
+drawable layer9
+drawable pause
+drawable play
+drawable singlegate
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string app_name
+style AppTheme
