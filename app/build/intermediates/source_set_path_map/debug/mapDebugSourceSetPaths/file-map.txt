@@ -10,10 +10,10 @@ vigneshgbe.endlessrunner.app-jetified-ads-adservices-java-1.0.0-beta05-8 C:\User
 vigneshgbe.endlessrunner.app-jetified-play-services-measurement-api-21.5.0-9 C:\Users\Ngomu\.gradle\caches\transforms-4\a430ea3e217027e70b8bb8b9c2259fae\transformed\jetified-play-services-measurement-api-21.5.0\res
 vigneshgbe.endlessrunner.app-jetified-ads-adservices-1.0.0-beta05-10 C:\Users\Ngomu\.gradle\caches\transforms-4\bcff07a456083c53def012b13e6a77c1\transformed\jetified-ads-adservices-1.0.0-beta05\res
 vigneshgbe.endlessrunner.app-core-1.9.0-11 C:\Users\Ngomu\.gradle\caches\transforms-4\c2be3eeff37a9ead1d2c3ad74ec6f1c4\transformed\core-1.9.0\res
-vigneshgbe.endlessrunner.app-pngs-12 C:\Users\Ngomu\Downloads\Endless-Runner-main\Endless-Runner-main\app\build\generated\res\pngs\debug
-vigneshgbe.endlessrunner.app-resValues-13 C:\Users\Ngomu\Downloads\Endless-Runner-main\Endless-Runner-main\app\build\generated\res\resValues\debug
-vigneshgbe.endlessrunner.app-packageDebugResources-14 C:\Users\Ngomu\Downloads\Endless-Runner-main\Endless-Runner-main\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-vigneshgbe.endlessrunner.app-packageDebugResources-15 C:\Users\Ngomu\Downloads\Endless-Runner-main\Endless-Runner-main\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-vigneshgbe.endlessrunner.app-debug-16 C:\Users\Ngomu\Downloads\Endless-Runner-main\Endless-Runner-main\app\build\intermediates\merged_res\debug\mergeDebugResources
-vigneshgbe.endlessrunner.app-debug-17 C:\Users\Ngomu\Downloads\Endless-Runner-main\Endless-Runner-main\app\src\debug\res
-vigneshgbe.endlessrunner.app-main-18 C:\Users\Ngomu\Downloads\Endless-Runner-main\Endless-Runner-main\app\src\main\res
+vigneshgbe.endlessrunner.app-pngs-12 D:\Android Game\Android-Game\app\build\generated\res\pngs\debug
+vigneshgbe.endlessrunner.app-resValues-13 D:\Android Game\Android-Game\app\build\generated\res\resValues\debug
+vigneshgbe.endlessrunner.app-packageDebugResources-14 D:\Android Game\Android-Game\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+vigneshgbe.endlessrunner.app-packageDebugResources-15 D:\Android Game\Android-Game\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+vigneshgbe.endlessrunner.app-debug-16 D:\Android Game\Android-Game\app\build\intermediates\merged_res\debug\mergeDebugResources
+vigneshgbe.endlessrunner.app-debug-17 D:\Android Game\Android-Game\app\src\debug\res
+vigneshgbe.endlessrunner.app-main-18 D:\Android Game\Android-Game\app\src\main\res

@@ -52,6 +52,10 @@
         "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/layer12.png"
     },
     {
+        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_walk.png.flat",
+        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/walk.png"
+    },
+    {
         "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_layer5.png.flat",
         "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/layer5.png"
     },
