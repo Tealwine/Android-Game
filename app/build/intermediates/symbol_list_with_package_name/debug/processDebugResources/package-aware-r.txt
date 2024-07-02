@@ -644,6 +644,7 @@ drawable cloud2
 drawable cloud3
 drawable cloud4
 drawable cloud5
+drawable cloud6
 drawable floor
 drawable layer1
 drawable layer10

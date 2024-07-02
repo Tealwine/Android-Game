@@ -1,142 +1,150 @@
 [
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_layer10.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/layer10.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_layer4.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\layer4.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_layer3.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/layer3.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_cloud4.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\cloud4.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_cloud1.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/cloud1.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_layer10.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\layer10.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/mipmap-mdpi/ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_layer8.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/layer8.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_cloud6.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\cloud6.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_cloud2.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\cloud2.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_play.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/play.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_alienyellowwalk2.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\alienyellowwalk2.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_cloud3.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/cloud3.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_layer1.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/layer1.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_layer6.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\layer6.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_pause.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/pause.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_layer9.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\layer9.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_alienyellowwalk1.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/alienyellowwalk1.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_walk.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\walk.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_layer12.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/layer12.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_cloud1.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\cloud1.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_walk.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/walk.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_layer12.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\layer12.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_layer5.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/layer5.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_layer2.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\layer2.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_pause.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\pause.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_cloud5.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/cloud5.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/mipmap-hdpi/ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_layer5.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\layer5.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_cloud2.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/cloud2.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_cloud5.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\cloud5.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_layer2.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/layer2.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_alienyellowjump.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\alienyellowjump.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_layer11.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/layer11.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_alienyellowwalk2.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/alienyellowwalk2.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_floor.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\floor.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_layer7.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/layer7.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_cloud3.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\cloud3.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_layer6.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/layer6.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_layer7.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\layer7.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/layout_activity_main.xml.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/layout/activity_main.xml"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_alienyellowwalk1.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\alienyellowwalk1.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\layout\\activity_main.xml"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_cloud4.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/cloud4.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_singlegate.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\singlegate.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_singlegate.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/singlegate.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_layer1.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\layer1.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/mipmap-xhdpi/ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_layer8.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\layer8.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_layer9.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/layer9.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\mipmap-hdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_alienyellowjump.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/alienyellowjump.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_play.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\play.png"
+    },
+    {
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_layer3.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\layer3.png"
     },
     {
         "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_floor.png.flat",
         "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/floor.png"
     },
     {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_layer4.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/layer4.png"
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_layer11.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\layer11.png"
     }
 ]
