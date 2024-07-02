@@ -4,9 +4,7 @@ color colorAccent
 color colorPrimary
 color colorPrimaryDark
 color ic_launcher_background
-drawable alienyellowjump
-drawable alienyellowwalk1
-drawable alienyellowwalk2
+drawable background
 drawable cloud1
 drawable cloud2
 drawable cloud3
@@ -34,5 +32,7 @@ layout activity_main
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
+raw game_music
+raw jump_sound
 string app_name
 style AppTheme
