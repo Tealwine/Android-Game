@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\raw_jump_sound.mp3.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\raw\\jump_sound.mp3"
+    },
+    {
         "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_layer4.png.flat",
         "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\layer4.png"
     },
@@ -112,6 +116,10 @@
         "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\singlegate.png"
     },
     {
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\raw_game_music.mp3.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\raw\\game_music.mp3"
+    },
+    {
         "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_layer1.png.flat",
         "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\layer1.png"
     },
@@ -128,6 +136,10 @@
         "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_background.png.flat",
+        "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\background.png"
+    },
+    {
         "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
         "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\mipmap-mdpi\\ic_launcher_foreground.webp"
     },
@@ -138,10 +150,6 @@
     {
         "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_layer3.png.flat",
         "source": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-main-18:\\drawable\\layer3.png"
-    },
-    {
-        "merged": "vigneshgbe.endlessrunner.app-debug-16:/drawable_floor.png.flat",
-        "source": "vigneshgbe.endlessrunner.app-main-18:/drawable/floor.png"
     },
     {
         "merged": "C:\\Users\\Ngomu\\.gradle\\daemon\\8.7\\vigneshgbe.endlessrunner.app-debug-16:\\drawable_layer11.png.flat",

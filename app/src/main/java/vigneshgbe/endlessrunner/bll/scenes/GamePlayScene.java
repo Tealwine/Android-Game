@@ -1,10 +1,13 @@
 package vigneshgbe.endlessrunner.bll.scenes;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Point;
 import android.graphics.Rect;
+import android.media.MediaPlayer;
 import android.view.MotionEvent;
 
 import java.util.Timer;
@@ -34,7 +37,7 @@ public class GamePlayScene implements IScene {
     private CloudManager mCloudManager;
 
     private Rect mTextRect;
-
+    private Paint mPaint;
     private PauseButton mPauseButton;
 
     private Player mPlayer;
@@ -57,9 +60,32 @@ public class GamePlayScene implements IScene {
     private TimerTask mScoreTimerTask;
     private Timer mScoreTimer;
 
+    private MediaPlayer mMediaPlayer;
+    private MediaPlayer mJumpSoundPlayer;
+
+    private Bitmap mBackground;
+
     public GamePlayScene(){
         newGame();
         mTextRect = new Rect();
+    }
+
+    private void initMusic() {
+        mMediaPlayer = MediaPlayer.create(Constants.CURRENT_CONTEXT, R.raw.game_music);
+        mMediaPlayer.setLooping(true);
+        mMediaPlayer.start();
+    }
+
+    private void initJumpSound() {
+        mJumpSoundPlayer = MediaPlayer.create(Constants.CURRENT_CONTEXT, R.raw.jump_sound);
+    }
+
+    private void initBackground() {
+        mBackground = BitmapFactory.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.background);
+        mBackground = Bitmap.createScaledBitmap(mBackground, Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT, true);
+        mPaint = new Paint();
+        mPaint.setColor(Color.argb(150, 0, 0, 0)); // Màu đen với alpha là 150 (tối đa là 255)
+
     }
 
     @Override
@@ -75,12 +101,45 @@ public class GamePlayScene implements IScene {
             mObstacleManager.update();
             if(mHealthManager.update(mAmountOfDamage)){
                 mGameOver = true;
+                stopMusic();
             }
 
             if(!mIsTimerStarted){
                 mScoreTimer.scheduleAtFixedRate(mScoreTimerTask, UPDATE_TIMER_INTERVAL, UPDATE_TIMER_INTERVAL);
                 mIsTimerStarted = true;
             }
+        }
+    }
+
+    private void stopMusic() {
+        if (mMediaPlayer != null) {
+            if (mMediaPlayer.isPlaying()) {
+                mMediaPlayer.stop();
+            }
+            mMediaPlayer.release();
+            mMediaPlayer = null;
+        }
+    }
+
+    private void stopJumpSound() {
+        if (mJumpSoundPlayer != null) {
+            if (mJumpSoundPlayer.isPlaying()) {
+                mJumpSoundPlayer.stop();
+            }
+            mJumpSoundPlayer.release();
+            mJumpSoundPlayer = null;
+        }
+    }
+
+    private void pauseMusic() {
+        if (mMediaPlayer != null && mMediaPlayer.isPlaying()) {
+            mMediaPlayer.pause();
+        }
+    }
+
+    private void resumeMusic() {
+        if (mMediaPlayer != null && !mMediaPlayer.isPlaying()) {
+            mMediaPlayer.start();
         }
     }
 
@@ -118,15 +177,25 @@ public class GamePlayScene implements IScene {
         if(!mIsJumping) {
             mGravity = -GRAVITY_THRESHOLD;
             mIsJumping = true;
+            playJumpSound();
         }else if(mIsJumping && mDoubleJumpAvailable){
             mGravity = -GRAVITY_THRESHOLD;
             mDoubleJumpAvailable = false;
+            playJumpSound();
+        }
+    }
+
+    private void playJumpSound() {
+        if (mJumpSoundPlayer != null) {
+            mJumpSoundPlayer.start();
         }
     }
 
     @Override
     public void draw(Canvas canvas) {
-        canvas.drawColor(Color.parseColor("#e5faff"));
+        // Vẽ hình nền
+        canvas.drawBitmap(mBackground, 0, 0, null);
+        canvas.drawRect(0, 0, Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT, mPaint);
         mCloudManager.draw(canvas);
 
         mFloor.draw(canvas);
@@ -162,7 +231,8 @@ public class GamePlayScene implements IScene {
 
     @Override
     public void terminate() {
-
+        stopMusic();
+        stopJumpSound();
     }
 
     @Override
@@ -171,6 +241,11 @@ public class GamePlayScene implements IScene {
             case MotionEvent.ACTION_DOWN:{
                 if(mPauseButton.getRect().contains((int)event.getX(), (int)event.getY())){
                     mIsPaused = !mIsPaused;
+                    if (mIsPaused) {
+                        pauseMusic();
+                    } else {
+                        resumeMusic();
+                    }
                 }else if (!mGameOver){
                     jump();
                 }else{
@@ -219,6 +294,12 @@ public class GamePlayScene implements IScene {
         };
         mScoreTimer = new Timer(true);
 
+        initMusic();
+        initJumpSound();
+        initBackground(); // Initialize the background image
+
+        mScoreTimer.scheduleAtFixedRate(mScoreTimerTask, UPDATE_TIMER_INTERVAL, UPDATE_TIMER_INTERVAL);
+        mIsTimerStarted = true;
     }
 
     /**
@@ -226,6 +307,7 @@ public class GamePlayScene implements IScene {
      * @param canvas
      * @param paint
      * @param textOne
+     * @param textTwo
      */
     private void drawCenterText(Canvas canvas, Paint paint, String textOne, String textTwo){
         paint.setTextAlign(Paint.Align.CENTER);

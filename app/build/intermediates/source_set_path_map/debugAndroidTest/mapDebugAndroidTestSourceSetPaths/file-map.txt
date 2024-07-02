@@ -1,0 +1,4 @@
+vigneshgbe.endlessrunner.test.app-androidTest-0 D:\Android Game\Android-Game\app\build\generated\res\resValues\androidTest\debug
+vigneshgbe.endlessrunner.test.app-mergeDebugAndroidTestResources-1 D:\Android Game\Android-Game\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+vigneshgbe.endlessrunner.test.app-mergeDebugAndroidTestResources-2 D:\Android Game\Android-Game\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+vigneshgbe.endlessrunner.test.app-debugAndroidTest-3 D:\Android Game\Android-Game\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

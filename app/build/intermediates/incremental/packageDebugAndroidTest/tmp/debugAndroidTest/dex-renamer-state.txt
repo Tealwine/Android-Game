@@ -1,0 +1,4 @@
+#Wed Jul 03 02:09:25 ICT 2024
+base.0=D\:\\Android Game\\Android-Game\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeDexDebugAndroidTest\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
