@@ -674,6 +674,7 @@ drawable play
 drawable singlegate
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable walk
 id ALT
 id CTRL
 id FUNCTION

@@ -28,6 +28,7 @@ drawable layer9
 drawable pause
 drawable play
 drawable singlegate
+drawable walk
 layout activity_main
 mipmap ic_launcher
 mipmap ic_launcher_foreground
