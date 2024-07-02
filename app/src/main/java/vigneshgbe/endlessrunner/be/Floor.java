@@ -13,7 +13,7 @@ import vigneshgbe.endlessrunner.R;
 
 public class Floor implements IGameObject {
 
-    private final int WIDTH = 100; // Độ rộng của mỗi mảnh sàn
+    private final int WIDTH = 150; // Độ rộng của mỗi mảnh sàn
     private final int Y_COORDINATE = Constants.SCREEN_HEIGHT - 50; // Tọa độ Y của sàn
 
     private Rect mRect; // Đối tượng Rect để định vị vị trí của sàn

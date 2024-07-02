@@ -39,11 +39,44 @@ public class CloudManager implements IGameObject {
     private void createImages() {
         mImages = new ArrayList<>();
         BitmapFactory bf = new BitmapFactory();
-        mImages.add(bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.cloud1));
-        mImages.add(bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.cloud2));
-        mImages.add(bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.cloud3));
-        mImages.add(bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.cloud4));
-        mImages.add(bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.cloud5));
+        mImages.add(scaleBitmap(bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.cloud1)));
+        mImages.add(scaleBitmap(bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.cloud2)));
+        mImages.add(scaleBitmap(bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.cloud3)));
+        mImages.add(scaleBitmap(bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.cloud4)));
+        mImages.add(scaleBitmap(bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.cloud5)));
+    }
+
+    /**
+     * Scale Bitmap về kích thước hợp lý.
+     */
+    private Bitmap scaleBitmap(Bitmap bitmap) {
+        int originalWidth = bitmap.getWidth();
+        int originalHeight = bitmap.getHeight();
+
+        // Giới hạn kích thước tối đa và tối thiểu
+        int maxWidth = originalWidth * 3;
+        int maxHeight = originalHeight * 3;
+        int minWidth = originalWidth;
+        int minHeight = originalHeight;
+
+        // Tính toán tỷ lệ scale
+        float widthRatio = (float) maxWidth / originalWidth;
+        float heightRatio = (float) maxHeight / originalHeight;
+        float scaleRatio = Math.min(widthRatio, heightRatio);
+
+        // Scale Bitmap
+        if (scaleRatio < 1.0) {
+            int newWidth = Math.round(originalWidth * scaleRatio);
+            int newHeight = Math.round(originalHeight * scaleRatio);
+            bitmap = Bitmap.createScaledBitmap(bitmap, newWidth, newHeight, true);
+        }
+
+        // Đảm bảo kích thước không nhỏ hơn kích thước ban đầu
+        if (bitmap.getWidth() < minWidth || bitmap.getHeight() < minHeight) {
+            bitmap = Bitmap.createScaledBitmap(bitmap, minWidth, minHeight, true);
+        }
+
+        return bitmap;
     }
 
     /**
