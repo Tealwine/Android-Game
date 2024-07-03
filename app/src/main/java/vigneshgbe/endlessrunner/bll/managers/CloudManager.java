@@ -23,12 +23,12 @@ public class CloudManager implements IGameObject {
 
     private final int CLOUD_MAXIMUM_Y_COORDINATE = Constants.SCREEN_HEIGHT - (CLOUD_MAXIMUM_HEIGHT * 2);
 
-    private final int CLOUD_SPEED = 5;
+    private final int CLOUD_SPEED = 4;
 
     private List<Cloud> mClouds; // Danh sách các đám mây
-    private List<Bitmap> mImages; // Danh sách hình ảnh của các đám mây
+    private Bitmap[] mCloudImages; // Mảng hình ảnh của các đám mây
 
-    public CloudManager(){
+    public CloudManager() {
         createImages(); // Tạo các hình ảnh đám mây
         populateClouds(); // Tạo các đám mây lúc khởi đầu
     }
@@ -37,13 +37,12 @@ public class CloudManager implements IGameObject {
      * Tạo tất cả hình ảnh được sử dụng cho các đám mây.
      */
     private void createImages() {
-        mImages = new ArrayList<>();
+        mCloudImages = new Bitmap[5]; // Số lượng hình ảnh đám mây
         BitmapFactory bf = new BitmapFactory();
-        mImages.add(scaleBitmap(bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.cloud1)));
-        mImages.add(scaleBitmap(bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.cloud2)));
-        mImages.add(scaleBitmap(bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.cloud3)));
-        mImages.add(scaleBitmap(bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.cloud4)));
-        mImages.add(scaleBitmap(bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.cloud5)));
+        for (int i = 0; i < mCloudImages.length; i++) {
+            Bitmap originalBitmap = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.cloud1 + i);
+            mCloudImages[i] = scaleBitmap(originalBitmap);
+        }
     }
 
     /**
@@ -84,47 +83,52 @@ public class CloudManager implements IGameObject {
      */
     private void populateClouds() {
         mClouds = new ArrayList<>();
-        for(Bitmap image : mImages){
+        for (Bitmap image : mCloudImages) {
             mClouds.add(createCloud(image)); // Tạo và thêm các đám mây vào danh sách
         }
     }
 
     /**
      * Tạo một đám mây với Bitmap đã cho, có kích thước và vị trí ngẫu nhiên.
+     *
      * @param image Hình ảnh của đám mây
      * @return Đối tượng Cloud
      */
-    private Cloud createCloud(Bitmap image){
+    private Cloud createCloud(Bitmap image) {
         double height = Math.random() * CLOUD_MAXIMUM_HEIGHT + CLOUD_MINIMUM_HEIGHT;
         double width = Math.random() * CLOUD_MAXIMUM_WIDTH + CLOUD_MINIMUM_WIDTH;
 
         double yCoordinate = Math.random() * CLOUD_MAXIMUM_Y_COORDINATE;
         double xCoordinate = (Math.random() * Constants.SCREEN_WIDTH) + Constants.SCREEN_WIDTH;
 
-        Rect rect = new Rect((int)xCoordinate, (int)yCoordinate, (int)(xCoordinate + width), (int)(yCoordinate + height));
+        Rect rect = new Rect((int) xCoordinate, (int) yCoordinate, (int) (xCoordinate + width), (int) (yCoordinate + height));
 
         return new Cloud(rect, image, CLOUD_SPEED); // Trả về đối tượng Cloud
     }
 
     @Override
     public void draw(Canvas canvas) {
-        for(Cloud cloud : mClouds){
+        for (Cloud cloud : mClouds) {
             cloud.draw(canvas); // Vẽ các đám mây lên canvas
         }
     }
 
     @Override
     public void update() {
-        for(Cloud cloud : mClouds){
-            cloud.move(); // Di chuyển các đám mây
-        }
-
-        // Kiểm tra nếu một đám mây đã vượt qua màn hình. Nếu có - xóa nó và tạo một đám mây mới với cùng hình ảnh.
-        if(mClouds.get(mClouds.size() - 1).getRect().right <= 0){
-            int pos = mClouds.size() - 1;
-            Bitmap image = mClouds.get(pos).getImage();
-            mClouds.remove(pos); // Xóa đám mây cuối cùng
-            mClouds.add(0, createCloud(image)); // Tạo và thêm đám mây mới vào đầu danh sách
+        for (Cloud cloud : mClouds) {
+            cloud.move(); // Move the clouds
+            if (cloud.getRect().right <= 0) {
+                // If the cloud moves off the left side of the screen, reset its position and reuse it
+                Bitmap image = cloud.getImage(); // Get the current cloud's image
+                cloud.reset(
+                        Constants.SCREEN_WIDTH + (float) (Math.random() * Constants.SCREEN_WIDTH), // New X coordinate
+                        (float) (Math.random() * CLOUD_MAXIMUM_Y_COORDINATE), // New Y coordinate
+                        Constants.SCREEN_WIDTH + (float) (Math.random() * Constants.SCREEN_WIDTH) + image.getWidth(), // New right coordinate
+                        (float) ((Math.random() * CLOUD_MAXIMUM_Y_COORDINATE) + image.getHeight()), // New bottom coordinate
+                        image, // Use the same image for reset
+                        CLOUD_SPEED // Use the same speed for reset
+                );
+            }
         }
     }
 }
