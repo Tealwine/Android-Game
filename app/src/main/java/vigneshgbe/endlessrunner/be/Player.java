@@ -72,18 +72,18 @@ public class Player implements IGameObject {
 
     private void createStickAnimations(){
         BitmapFactory bf = new BitmapFactory();
-        Bitmap img1 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.layer1);
-        Bitmap img2 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.layer2);
-        Bitmap img3 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.layer3);
-        Bitmap img4 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.layer4);
-        Bitmap img5 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.layer5);
-        Bitmap img6 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.layer6);
-        Bitmap img7 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.layer7);
-        Bitmap img8 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.layer8);
-        Bitmap img9 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.layer9);
-        Bitmap img10 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.layer10);
-        Bitmap img11 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.layer11);
-        Bitmap img12 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.layer12);
+        Bitmap img1 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.gamers1);
+        Bitmap img2 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.gamers2);
+        Bitmap img3 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.gamers3);
+        Bitmap img4 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.gamers4);
+        Bitmap img5 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.gamers5);
+        Bitmap img6 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.gamers6);
+        Bitmap img7 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.gamers7);
+        Bitmap img8 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.gamers8);
+        Bitmap img9 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.gamers9);
+        Bitmap img10 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.gamers10);
+        Bitmap img11 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.gamers11);
+        Bitmap img12 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(), R.drawable.gamers12);
 
         mRunAnimation = new Animation(new Bitmap[]{img1, img2, img3, img4, img5, img6,
                 img7, img8, img9, img10, img11, img12},
