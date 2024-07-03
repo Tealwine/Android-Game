@@ -37,7 +37,7 @@ public class ObstacleManager implements IGameObject{
         while(currX > Constants.SCREEN_WIDTH){
             mObstacles.add(new Obstacle(mObstacleHeight, mObstacleWidth,
                     (int)(Math.random() * (currX) + Constants.SCREEN_WIDTH),
-                    Constants.SCREEN_HEIGHT - 150, mColor));
+                    Constants.SCREEN_HEIGHT - 300, mColor));
             currX -= mObstacleGap;
         }
     }
@@ -61,7 +61,7 @@ public class ObstacleManager implements IGameObject{
             int xStart = (int)(Math.random() * (mObstacleGap + mObstacles.get(0).getRect().right));
             mObstacles.add(0, new Obstacle(mObstacleHeight, mObstacleWidth,
                     Constants.SCREEN_WIDTH + xStart,
-                    Constants.SCREEN_HEIGHT - 150, mColor));
+                    Constants.SCREEN_HEIGHT - 250, mColor));
         }
 
     }

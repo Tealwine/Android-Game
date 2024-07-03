@@ -14,7 +14,7 @@ import vigneshgbe.endlessrunner.R;
 public class Floor implements IGameObject {
 
     private final int WIDTH = 100;
-    private final int Y_COORDINATE = Constants.SCREEN_HEIGHT - 50;
+    private final int Y_COORDINATE = Constants.SCREEN_HEIGHT - 200;
 
     private Rect mRect;
 

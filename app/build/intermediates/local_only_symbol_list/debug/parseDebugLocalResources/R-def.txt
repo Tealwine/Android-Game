@@ -13,6 +13,18 @@ drawable cloud3
 drawable cloud4
 drawable cloud5
 drawable floor
+drawable gamers1
+drawable gamers10
+drawable gamers11
+drawable gamers12
+drawable gamers2
+drawable gamers3
+drawable gamers4
+drawable gamers5
+drawable gamers6
+drawable gamers7
+drawable gamers8
+drawable gamers9
 drawable layer1
 drawable layer10
 drawable layer11
@@ -28,6 +40,7 @@ drawable layer9
 drawable pause
 drawable play
 drawable singlegate
+drawable singlegate1
 layout activity_main
 mipmap ic_launcher
 mipmap ic_launcher_foreground

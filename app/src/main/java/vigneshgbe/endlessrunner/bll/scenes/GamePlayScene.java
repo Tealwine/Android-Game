@@ -102,7 +102,7 @@ public class GamePlayScene implements IScene {
             mGravity = 0;
             mIsJumping = false;
             mDoubleJumpAvailable = true;
-            mPlayerPoint.set(mPlayerPoint.x, Constants.SCREEN_HEIGHT - 120);
+            mPlayerPoint.set(mPlayerPoint.x, Constants.SCREEN_HEIGHT - 270);
         }else if(mIsJumping && mGravity < 0){
             mGravity += 1;
         }else if(mIsJumping && mGravity < GRAVITY_THRESHOLD){
