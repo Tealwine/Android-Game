@@ -24,7 +24,8 @@ import vigneshgbe.endlessrunner.bll.managers.GravityManager;
 import vigneshgbe.endlessrunner.bll.managers.HealthManager;
 import vigneshgbe.endlessrunner.bll.managers.ObstacleManager;
 import vigneshgbe.endlessrunner.bll.managers.SceneManager;
-
+import android.content.Context;
+import android.content.SharedPreferences;
 public class GamePlayScene implements IScene {
 
     private final int X_POSITION = Constants.SCREEN_WIDTH / 4;
@@ -42,7 +43,7 @@ public class GamePlayScene implements IScene {
 
     private Player mPlayer;
     private Point mPlayerPoint;
-
+    private int mHighScore;
     private Floor mFloor;
 
     private float mGravity;
@@ -52,7 +53,7 @@ public class GamePlayScene implements IScene {
 
     private boolean mGameOver;
     private boolean mIsPaused;
-
+    private final String HIGH_SCORE_KEY = "HIGH_SCORE";
     private int mAmountOfDamage;
     private int mScore;
 
@@ -68,6 +69,8 @@ public class GamePlayScene implements IScene {
     public GamePlayScene(){
         newGame();
         mTextRect = new Rect();
+        SharedPreferences prefs = Constants.CURRENT_CONTEXT.getSharedPreferences("GamePrefs", Context.MODE_PRIVATE);
+        mHighScore = prefs.getInt(HIGH_SCORE_KEY, 0);
     }
 
     private void initMusic() {
@@ -102,12 +105,22 @@ public class GamePlayScene implements IScene {
             if(mHealthManager.update(mAmountOfDamage)){
                 mGameOver = true;
                 stopMusic();
+                checkAndUpdateHighScore(); // Kiểm tra và cập nhật điểm cao nhất nếu cần
             }
 
             if(!mIsTimerStarted){
                 mScoreTimer.scheduleAtFixedRate(mScoreTimerTask, UPDATE_TIMER_INTERVAL, UPDATE_TIMER_INTERVAL);
                 mIsTimerStarted = true;
             }
+        }
+    }
+    private void checkAndUpdateHighScore() {
+        if (mScore > mHighScore) {
+            mHighScore = mScore;
+            SharedPreferences prefs = Constants.CURRENT_CONTEXT.getSharedPreferences("GamePrefs", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putInt(HIGH_SCORE_KEY, mHighScore);
+            editor.apply();
         }
     }
 
@@ -213,7 +226,7 @@ public class GamePlayScene implements IScene {
             paint.setTextSize(100);
             paint.setColor(Color.WHITE);
             paint.setShadowLayer(5, 0, 0, Color.BLACK);
-            drawCenterText(canvas, paint, "Game over!", "Score: " + mScore);
+            drawCenterText(canvas, paint, "Game over!", "Score: " + mScore, "High Score: " + mHighScore);
         }
     }
 
@@ -227,7 +240,9 @@ public class GamePlayScene implements IScene {
         paint.setColor(Color.WHITE);
         paint.setShadowLayer(5, 0, 0, Color.BLACK);
         canvas.drawText("Score: " + mScore, 50, 50 + paint.descent() - paint.ascent(), paint);
+        canvas.drawText("High Score: " + mHighScore, 50, 150 + paint.descent() - paint.ascent(), paint);
     }
+
 
     @Override
     public void terminate() {
@@ -309,16 +324,23 @@ public class GamePlayScene implements IScene {
      * @param textOne
      * @param textTwo
      */
-    private void drawCenterText(Canvas canvas, Paint paint, String textOne, String textTwo){
+    private void drawCenterText(Canvas canvas, Paint paint, String textOne, String textTwo, String textThree){
         paint.setTextAlign(Paint.Align.CENTER);
         canvas.getClipBounds(mTextRect);
         int cHeight = mTextRect.height();
         int cWidth = mTextRect.width();
         paint.getTextBounds(textOne, 0, textOne.length(), mTextRect);
         float x = cWidth / 2f;
-        float y = cHeight / 2f - 50;
+        float y = cHeight / 2f - 100;
         canvas.drawText(textOne, x, y, paint);
-        y = cHeight / 2f + 50;
+        y = cHeight / 2f;
         canvas.drawText(textTwo, x, y, paint);
+        y = cHeight / 2f + 100;
+        canvas.drawText(textThree, x, y, paint);
+    }
+
+    @Override
+    public void setHighScore(int highScore) {
+        mHighScore = highScore;
     }
 }
