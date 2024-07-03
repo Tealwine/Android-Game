@@ -5,38 +5,46 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Rect;
 
-public class Cloud implements IGameObject { // Định nghĩa lớp Cloud và triển khai giao diện IGameObject
+import vigneshgbe.endlessrunner.bll.IScene;
+
+public class Cloud implements IGameObject {
 
     private Rect mRect; // Đối tượng Rect để định vị vị trí của đám mây trên màn hình
     private Bitmap mImage; // Hình ảnh của đám mây
     private int mSpeed; // Tốc độ di chuyển của đám mây
 
-    public Cloud(Rect rect, Bitmap image, int speed){ // Constructor của lớp Cloud
+    public Cloud(Rect rect, Bitmap image, int speed) {
         mRect = rect;
         mImage = image;
         mSpeed = speed;
     }
 
     @Override
-    public void draw(Canvas canvas) { // Phương thức vẽ đám mây lên canvas
+    public void draw(Canvas canvas) {
         canvas.drawBitmap(mImage, null, mRect, new Paint());
     }
 
     @Override
-    public void update() { // Phương thức cập nhật trạng thái của đám mây (chưa được triển khai)
-
+    public void update() {
+        // Tạm thời không cần triển khai phương thức update vì đối tượng Cloud không cần cập nhật logic phức tạp
     }
 
-    public void move(){ // Phương thức di chuyển đám mây sang trái dựa vào tốc độ
+    public void move() {
         mRect.right -= mSpeed;
         mRect.left -= mSpeed;
     }
 
-    public Bitmap getImage(){ // Phương thức trả về hình ảnh của đám mây
+    public void reset(float left, float top, float right, float bottom, Bitmap image, int speed) {
+        mRect.set((int) left, (int) top, (int) right, (int) bottom);
+        mImage = image;
+        mSpeed = speed;
+    }
+
+    public Bitmap getImage() {
         return mImage;
     }
 
-    public Rect getRect(){ // Phương thức trả về đối tượng Rect định vị vị trí của đám mây
+    public Rect getRect() {
         return mRect;
     }
 }
